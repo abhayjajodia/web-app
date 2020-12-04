@@ -1,0 +1,192 @@
+body {
+    display: flex;
+    background-color: #101010;
+    overflow: hidden;
+}
+
+
+/* --------------------------------- dark mode ----------------------------------------     */
+body.dark {
+    background-color: whitesmoke !important;
+}
+
+body.dark nav ul li a {
+    color: grey;
+}
+
+body.dark nav ul li a:hover {
+    color: black;
+    text-shadow: 0px 0px 4px grey;
+}
+
+body.dark nav #all {
+    color: black;
+    text-shadow: 0px 0px 2px grey;
+}
+
+body.dark nav #collection {
+    color: black;
+    text-shadow: 0px 0px 2px grey;
+}
+/* ----------------------------center-content------------------------------------------------- */
+.center_content{
+    position:relative;
+    display:flex;
+}
+
+/*     --------------------------------- header tag ----------------------------------------     */
+header{
+    border-bottom: 3px solid #419e41;   
+    width:1200px;
+    margin-left: 55px;  
+    align-self: center;
+    padding-bottom: 15px;
+    max-width: 1200px;
+    min-width: 600px;
+}
+
+header label{
+    float: left;
+    margin: 30px 20px;  
+}
+
+.search{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: -80px;
+}
+
+.search img {
+    margin-top: 60px;
+}
+
+.search .text{
+    border-radius: 30px;
+}
+
+/*     --------------------------------- logo tag ----------------------------------------     */
+.logo{
+    max-height: 150px;
+}
+
+
+.logo img{
+    float:left;
+    widows: 150px;
+    height: 150px;
+}
+
+/* --------------------------------------profile--------------------------- */
+.profile{
+    position: relative;
+}
+
+.profile img{
+    width: 23px;
+    height: 23px;
+    padding: 0 3px;
+}
+
+.profile a{
+    position: absolute;
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    transform: translate(1060px,-60px);
+}
+
+.profile a.hover{
+    color: whitesmoke;
+    text-shadow: 0px 0px 4px whitesmoke;
+}
+
+
+/*    -----------------------------------------------------navigation bar -------------------------    */
+nav {
+    float: left;
+    display:flex;
+    border-right: 3px solid #419e41;
+    padding-top: 10px;
+    margin-top: 20px;
+    max-width: max-content;
+    padding-right:60px;
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 20px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #4c4c4c;
+    margin-left: 15px;
+}
+
+nav ul li a:hover {
+    color: whitesmoke;
+    text-shadow: 0px 0px 4px whitesmoke;
+    transform: translateX(-50%);
+    transition-duration: 100ms;
+}
+
+#all {
+    color: whitesmoke;
+    font-size: 20px;
+    text-shadow: 0px 0px 2px whitesmoke;
+}
+
+#collection {
+    color: whitesmoke;
+    font-size: 20px;
+    text-shadow: 0px 0px 2px whitesmoke;
+}
+
+
+/* ------------------------------- switch button for dark mode ------------------------------------------------- */
+.label {
+    background-color: #4c4c4c;
+    display: flex;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(24px);
+
+}
+
+.ball {
+    background-color: whitesmoke;
+    position: absolute;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.2s linear;
+}
+/* ------------------------------center content------------------------------- */
+.center_content{
+    flex:4;
+}
+
+/* -----------------main body------------------------------------------------------- */
+article{
+    display:flex;
+    padding: 50px 80px;
+    align-content: center;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+
